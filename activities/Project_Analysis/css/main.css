@@ -1,0 +1,160 @@
+/* CSS Document */
+/* Project Analysis for "Let There Be Shade by Creatve Designs and Beyond" */
+/*---------------------------------------------Eric Meyer CSS Reset--------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*----------------------------------End of Eric Meyer CSS Reset----------------*/
+/*------------------------------------------------Sitewide settings-----------*/
+body {
+	font-family: 'Oxygen', sans-serif;
+	background: #EEFFE6;
+	line-height: 1.5;
+}
+table {
+	width: 70%;
+}
+table th {
+	text-align: left;
+}
+table, td, tr, th {
+	border: 1px solid #333;
+	padding: 1%;
+}
+table a {
+	text-decoration: none;
+}
+h1, h2 {
+	padding-left: 1%;
+	margin-bottom: 1%;
+}
+h1 {
+	width: 70%; 
+	font-size: 1.6em;
+	float: left;
+}
+h2 {
+	font-size: 1.5em;
+	background-color: #F7FFE6;
+}
+h3 {
+	font-size: 1.3em;
+	padding-left: 2%;
+}
+h4 {
+	font-size: 1.1em;
+	padding-left: 2%;
+}
+ul {
+	list-style-type: square;
+	padding-bottom: 15px;
+}
+li {
+	padding-left: 2%;
+}
+p {
+	font-size: 1em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.author {
+	width: 15%; 
+	float: right;
+	overflow: hidden;
+}
+.intent {
+	clear: both;
+}
+span {
+	font-weight: bold;
+}
+table {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 12%;
+}
+.competition h3 {
+	width: 25%;
+	background: #F7FFE6;
+	margin-bottom: 10px;
+}
+img {
+	border: 5px solid #333;
+	margin: 15px 9.5%;
+}
+.persona {
+	border: 1px groove #333;
+	width: 27%;
+	height: 1280px;
+	float: left;
+	padding-bottom: 10px;
+	margin-left: 4.555%;
+	background-color: #F7FFE6;
+}
+.persona img {
+	margin-left: 12%;
+}
+.persona h3 {
+	padding-left: 2%;
+}
+.persona p {
+	padding: 0 3%;
+}
+blockquote {
+	margin: 1% 2%;
+}
+footer {
+	clear: both;
+	padding-top: 15px;
+}
+footer p {
+	font-size: 0.8em;
+}
+
+	
