@@ -140,10 +140,10 @@ img {
 .persona {
 	/*border: 1px groove #333;*/
 	width: 27%;
-	height: 1240px;
+	/*height: 1240px;*/
 	float: left;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	margin-top: 25px;
 	margin-left: 4.555%;
 	background-color: #FFC;
