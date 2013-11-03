@@ -1,0 +1,135 @@
+/*
+Responsive 996px grid system ~ Style CSS.
+Copyright 2013, Josh Cope
+*/
+
+/* =============================================================================
+   Site Styles
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6, p, aside, article, section, div, form, ul, li {
+	/*background-color: #0FF;*/
+	/*outline: 1px solid #333;*/
+}/*remove when finished, just to see the elements*/
+/*---------header settings---------------------------------------------------*/
+body {
+	font-size: 100%;
+	line-height: 1.5;
+}
+h1 {
+	font-size: 1.6em;
+}
+h2 {
+	font-size: 1.4em;
+}
+h3 {
+	font-size: 1.2em;
+}
+header {
+	overflow: hidden;/*turn this on after nav added*/
+}
+.phoneRight {
+	text-align: right;
+}
+h1 {
+	text-align: center;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	overflow: hidden;
+}
+li {
+	float: left;
+}
+
+	
+
+/*---------main settings--------------*/
+img {
+	/*overflow: hidden;*/
+	margin-left: 0;
+}
+.main_content {
+	/*overflow: hidden;*/
+}
+/*--------- aside settings------------*/
+aside {
+	overflow: hidden;
+}
+
+/*---------section settings-----------*/ 
+ 
+/*---------footer settings------------*/
+footer {
+	clear: both;
+}
+footer p {
+	font-size: 0.8em;
+}
+
+/* =============================================================================
+   Services Styles
+   ========================================================================== */
+   
+   
+   
+/* =============================================================================
+   Spotlight Styles
+   ========================================================================== */
+   
+   
+   
+/* =============================================================================
+   Schedule Styles
+   ========================================================================== */ 
+section form {
+	line-height: 2.0;
+}
+   
+   
+/* =============================================================================
+   About Us Styles
+   ========================================================================== */
+   
+   
+   
+ /* =============================================================================
+   Contact Us Styles
+   ========================================================================== */
+   
+   
+       
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Tablet Portrait size to Base 996px */
+@media only screen and (min-width: 768px) and (max-width: 995px) {}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {}
+
+
+/* =============================================================================
+   Font-Face
+   ========================================================================== */
+/* This is the proper syntax for an @font-face file
+
+/* @font-face {
+font-family: 'FontName';
+src: url('../fonts/FontName.eot');
+src: url('../fonts/FontName.eot?iefix') format('embedded-opentype'),
+url('../fonts/FontName.woff') format('woff'),
+url('../fonts/FontName.ttf') format('truetype'),
+url('../fonts/FontName.svg#FontName') format('svg');
+font-weight: normal;
+font-style: normal; }
+*/
