@@ -8,12 +8,12 @@ Copyright 2013, Josh Cope
    ========================================================================== */
 h1, h2, h3, h4, h5, h6, p, aside, article, section, div, form, ul, li {
 	/*background-color: #0FF;*/
-	/*outline: 1px solid #333;*/
+	outline: 1px solid #333;
 }/*remove when finished, just to see the elements*/
 /*---------header settings---------------------------------------------------*/
 body {
 	font-size: 100%;
-	line-height: 1.5;
+	line-height: 1.4;
 }
 h1 {
 	font-size: 1.6em;
@@ -23,6 +23,10 @@ h2 {
 }
 h3 {
 	font-size: 1.2em;
+}
+h4 {
+	font-size: 1.1em;
+	margin-top: 20px;
 }
 header {
 	overflow: hidden;/*turn this on after nav added*/
@@ -57,6 +61,27 @@ img {
 aside {
 	overflow: hidden;
 }
+aside #name_first {
+	margin-left: 5%;
+}
+aside #name_last {
+	margin-left: 5%;
+}
+aside #address {
+	margin-left: 13%;
+}
+aside #city {
+	margin-left: 24%;
+}
+aside #zip_code {
+	margin-left: 9%;
+}
+aside #usrtel {
+	margin-left: 18%;
+}
+aside #email_address {
+	margin-left: 19%;
+}
 
 /*---------section settings-----------*/ 
  
@@ -71,7 +96,9 @@ footer p {
 /* =============================================================================
    Services Styles
    ========================================================================== */
-   
+article {
+	 clear: both;
+ }
    
    
 /* =============================================================================
@@ -85,6 +112,27 @@ footer p {
    ========================================================================== */ 
 section form {
 	line-height: 2.0;
+}
+#schedule_form #name_first {
+	margin-left: 1.9%;
+}
+#schedule_form #name_last {
+	margin-left: 2%;
+}
+#schedule_form #address {
+	margin-left: 3.7%;
+}
+#schedule_form #city {
+	margin-left: 6.2%;
+}
+#schedule_form #zip_code {
+	margin-left: 2.85%;
+}
+#schedule_form #usrtel {
+	margin-left: 4.85%;
+}
+#schedule_form #email_address {
+	margin-left: 5.2%;
 }
    
    
@@ -106,16 +154,159 @@ section form {
    ========================================================================== */
 
 /* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 768px) and (max-width: 995px) {}
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	body {
+		background-color:mistyrose;
+	}
+	aside #name_first {
+	margin-left: 23%;
+}
+	aside #name_last {
+	margin-left: 23%;
+}
+	aside #address {
+	margin-left: 23%;
+}
+	aside #city {
+	margin-left: 6%;
+}
+	aside #zip_code {
+	margin-left: 23%;
+}
+	aside #usrtel {
+	margin-left: 23%;
+}
+	aside #email_address {
+	margin-left: 23%;
+}
+#schedule_form #name_first {
+	margin-left: 1.9%;
+}
+#schedule_form #name_last {
+	margin-left: 2.2%;
+}
+#schedule_form #address {
+	margin-left: 4.3%;
+}
+#schedule_form #city {
+	margin-left: 7.7%;
+}
+#schedule_form #zip_code {
+	margin-left: 3.35%;
+}
+#schedule_form #usrtel {
+	margin-left: 5.9%;
+}
+#schedule_form #email_address {
+	margin-left: 6.3%;
+}
+}
 
 /* All Mobile Sizes */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+	body {
+		background-color:yellow;
+}
+}
 
 /* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	body {
+		background-color:teal;
+}
+aside #name_first {
+	margin-left: 3%;
+}
+	aside #name_last {
+	margin-left: 3%;
+}
+	aside #address {
+	margin-left: 7%;
+}
+	aside #city {
+	margin-left: 13%;
+}
+	aside #zip_code {
+	margin-left: 5.1%;
+}
+	aside #usrtel {
+	margin-left: 9.7%;
+}
+	aside #email_address {
+	margin-left: 10.6%;
+}
+#schedule_form #name_first {
+	margin-left: 3%;
+}
+#schedule_form #name_last {
+	margin-left: 3%;
+}
+#schedule_form #address {
+	margin-left: 6.7%;
+}
+#schedule_form #city {
+	margin-left: 12.2%;
+}
+#schedule_form #zip_code {
+	margin-left: 5%;
+}
+#schedule_form #usrtel {
+	margin-left: 9%;
+}
+#schedule_form #email_address {
+	margin-left: 10%;
+}
+	
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+	body {
+		background-color:yellow;
+}
+aside #name_first {
+	margin-left: 3%;
+}
+aside #name_last {
+	margin-left: 3%;
+}
+	aside #address {
+	margin-left: 9.6%;
+}
+	aside #city {
+	margin-left: 19%;
+}
+	aside #zip_code {
+	margin-left: 6.3%;
+}
+	aside #usrtel {
+	margin-left: 13.2%;
+}
+	aside #email_address {
+	margin-left: 14%;
+}
+#schedule_form #name_first {
+	margin-left: 3%;
+}
+#schedule_form #name_last {
+	margin-left: 3%;
+}
+#schedule_form #address {
+	margin-left: 8.7%;
+}
+#schedule_form #city {
+	margin-left: 17.2%;
+}
+#schedule_form #zip_code {
+	margin-left: 6%;
+}
+#schedule_form #usrtel {
+	margin-left: 13%;
+}
+#schedule_form #email_address {
+	margin-left: 14%;
+}
+}
 
 
 /* =============================================================================
