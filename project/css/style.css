@@ -7,9 +7,8 @@ Copyright 2013, Josh Cope
    Site Styles
    ========================================================================== */
 h1, h2, h3, h4, h5, h6, p, aside, article, section, div, form, ul, li {
-	/*background-color: #0FF;*/
-	outline: 1px solid #333;
-}/*remove when finished, just to see the elements*/
+	/*outline: 1px solid #333;*/
+}/*comment out when finished, just to see the elements*/
 /*---------header settings---------------------------------------------------*/
 body {
 	font-size: 100%;
@@ -29,7 +28,7 @@ h4 {
 	margin-top: 20px;
 }
 header {
-	overflow: hidden;/*turn this on after nav added*/
+	overflow: hidden;
 }
 .phoneRight {
 	text-align: right;
@@ -51,11 +50,7 @@ li {
 
 /*---------main settings--------------*/
 img {
-	/*overflow: hidden;*/
 	margin-left: 0;
-}
-.main_content {
-	/*overflow: hidden;*/
 }
 /*--------- aside settings------------*/
 aside {
