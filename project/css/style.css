@@ -150,9 +150,9 @@ section form {
 
 /* Tablet Portrait size to Base 996px */
 @media only screen and (min-width: 768px) and (max-width: 995px) {
-	body {
+	/*body {
 		background-color:mistyrose;
-	}
+	}*//*breaking point colors commented out*/
 	aside #name_first {
 	margin-left: 23%;
 }
@@ -199,16 +199,16 @@ section form {
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
-	body {
+	/*body {
 		background-color:yellow;
-}
+}*/
 }
 
 /* Mobile Landscape Size to Tablet Portrait */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	body {
+	/*body {
 		background-color:teal;
-}
+}*/
 aside #name_first {
 	margin-left: 3%;
 }
@@ -256,9 +256,9 @@ aside #name_first {
 
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
-	body {
+	/*body {
 		background-color:yellow;
-}
+}*/
 aside #name_first {
 	margin-left: 3%;
 }
