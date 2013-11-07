@@ -45,6 +45,10 @@ ul {
 li {
 	float: left;
 }
+.grid_6 img {
+	max-width: 100%;
+	min-width: 100%
+}
 
 	
 
