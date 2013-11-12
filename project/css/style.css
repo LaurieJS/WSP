@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6, p, aside, article, section, div, form, ul, li {
 body {
 	font-size: 100%;
 	line-height: 1.4;
+	background: #D7E9B3;
+	background-image: url(../images/texture_background.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 h1 {
 	font-size: 1.6em;
@@ -29,9 +33,16 @@ h4 {
 }
 header {
 	overflow: hidden;
+	background-color: #555C47;
 }
 .phoneRight {
 	text-align: right;
+	color: #ffffff;
+}
+.phoneLeft {
+	color: #ffffff;
+	position: relative;
+	left: 14%;
 }
 h1 {
 	text-align: center;
@@ -39,11 +50,22 @@ h1 {
 a {
 	text-decoration: none;
 }
-ul {
+nav ul {
 	overflow: hidden;
+	background-color: #555C47;
 }
 li {
 	float: left;
+	margin-left: 0%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 9%;
+	
+}
+li a {
+	color: #ffffff;
+	top: 0px;
+	bottom: 0px;
 }
 .grid_6 img {
 	max-width: 100%;
@@ -54,11 +76,12 @@ li {
 
 /*---------main settings--------------*/
 img {
-	margin-left: 0;
+	margin-left: 0%;
 }
 /*--------- aside settings------------*/
 aside {
 	overflow: hidden;
+	padding-top: 10px;
 }
 aside #name_first {
 	margin-left: 5%;
@@ -87,8 +110,10 @@ aside #email_address {
 /*---------footer settings------------*/
 footer {
 	clear: both;
+	/*background: #555C47;*/
 }
 footer p {
+	clear: both;
 	font-size: 0.8em;
 }
 
