@@ -64,8 +64,15 @@ li {
 }
 li a {
 	color: #ffffff;
-	top: 0px;
-	bottom: 0px;
+}
+li a:hover {
+	color: #D04C1E;
+}
+li a:active {
+	color: #d7e9b3;
+}
+li.selected a {
+	 color: #d7e9b3;
 }
 .grid_6 img {
 	max-width: 100%;
