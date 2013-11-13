@@ -19,30 +19,57 @@ body {
 	background-repeat: no-repeat;
 }
 h1 {
-	font-size: 1.6em;
+	font-family: Cochin, serif;
+	font-size: 1.5em;
+	padding-left: 5px;
 }
 h2 {
+	font-family: Cochin, serif;
 	font-size: 1.4em;
+	color: #D7E9B3;
+	background-color: #555c47;
+	padding-left: 5px;
 }
 h3 {
+	font-family: Cochin, serif;
 	font-size: 1.2em;
+	background-color: #555c47;
+	/*color: #d7e9b3;*/
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
 }
 h4 {
+	font-family: Cochin, serif;
 	font-size: 1.1em;
-	margin-top: 20px;
+	margin-top: 10px;
+	padding-left: 5px;
+	color: #D7E9B3;
+}
+p {
+	font-family:"Mongolian Baiti", serif;
+	padding: 5px;
 }
 header {
 	overflow: hidden;
 	background-color: #555C47;
 }
+header img {
+	margin-left: 25px;
+}
 .phoneRight {
+	font-family: Cochin, serif;
+	font-size: 1.1em;
 	text-align: right;
-	color: #ffffff;
+	color: #D7E9B3;
 }
 .phoneLeft {
-	color: #ffffff;
-	position: relative;
-	left: 14%;
+	font-family: Cochin, serif;
+	font-size: 1.1em;
+	color: #D7E9B3;
+	margin-left: 25px;
+	/*position: relative;
+	left: 14%;*/
 }
 h1 {
 	text-align: center;
@@ -54,25 +81,27 @@ nav ul {
 	overflow: hidden;
 	background-color: #555C47;
 }
-li {
+footer li, nav li {
+	display: inline-block;
+	width: 16.666666%;
 	float: left;
 	margin-left: 0%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 9%;
-	
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	/*padding-left: 10%;*/
 }
 li a {
 	color: #ffffff;
 }
 li a:hover {
-	color: #D04C1E;
+	color: #d04c1e;
 }
 li a:active {
 	color: #d7e9b3;
 }
 li.selected a {
-	 color: #d7e9b3;
+	 color: #000;
 }
 .grid_6 img {
 	max-width: 100%;
@@ -83,15 +112,20 @@ li.selected a {
 
 /*---------main settings--------------*/
 img {
-	margin-left: 0%;
+}
+section h3 {
+	background-color: #ffffff;
+}
+section p {
+	background-color: #ffffff;
 }
 /*--------- aside settings------------*/
 aside {
 	overflow: hidden;
-	padding-top: 10px;
+	margin-top: 0px; /*problems*/
 }
 aside #name_first {
-	margin-left: 5%;
+	margin-left: 4.5%;
 }
 aside #name_last {
 	margin-left: 5%;
@@ -110,6 +144,50 @@ aside #usrtel {
 }
 aside #email_address {
 	margin-left: 19%;
+}
+aside .form_field input {
+	width: 55%;
+}
+.form_field label {
+	padding-left: 5px;
+}
+form {
+	padding-right: 0px;
+	background-color: #ffffff;
+}
+aside .button {
+	font: 1.5em "Imprint MT Shadow", serif;
+	color: #ffffff;
+	background-color: #d04c1e;
+	border: none;
+	border-radius: 7px;
+	width:  57%;
+	height: 40px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	margin-left: 40.5%;
+}
+input:hover {
+	color: #555c47;
+}
+input:focus {
+	color: #333;
+}
+input:active {
+	color: #d7e9b3;
+}
+.lower_aside {
+	margin-top: 125px;
+	background-color: #555c47;
+}/*only in the indexhtml page-trying to figure out the lower aside*/
+.lower_aside li {
+	color: #d7e9b3;
+	font-family: 1.1em Cochin, serif;
+	font-size: 1.1em;
+	line-height: 1.2;
+	padding-top: 10px;
+	padding-right: 5%;
+	padding-left: 5%;
 }
 
 /*---------section settings-----------*/ 
@@ -130,7 +208,15 @@ footer p {
 article {
 	 clear: both;
  }
-   
+ article .container h3 {
+	 color: #d7e9b3;
+	 padding: 10px 5px;
+ }
+ article .grid_3 alpha img {
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 background-color: #ffffff;
+ }
    
 /* =============================================================================
    Spotlight Styles
@@ -141,6 +227,18 @@ article {
 /* =============================================================================
    Schedule Styles
    ========================================================================== */ 
+#schedule_form .button {
+	font: 1.5em "Imprint MT Shadow", serif;
+	color: #ffffff;
+	background-color: #d04c1e;
+	border: none;
+	border-radius: 7px;
+	width:  15%;
+	height: 40px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	margin-left: 10%;
+} 
 section form {
 	line-height: 2.0;
 }
@@ -165,6 +263,9 @@ section form {
 #schedule_form #email_address {
 	margin-left: 5.2%;
 }
+textarea {
+	margin-left: 10%;
+}
    
    
 /* =============================================================================
@@ -186,9 +287,12 @@ section form {
 
 /* Tablet Portrait size to Base 996px */
 @media only screen and (min-width: 768px) and (max-width: 995px) {
-	/*body {
+	form {
 		background-color:mistyrose;
-	}*//*breaking point colors commented out*/
+	}/*breaking point colors commented out*/
+	.form_field input {
+	 /*width: 75px;*/ /*works, but I need to change the originals to %*/
+}
 	aside #name_first {
 	margin-left: 23%;
 }
@@ -235,16 +339,16 @@ section form {
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
-	/*body {
+	form {
 		background-color:yellow;
-}*/
+}
 }
 
 /* Mobile Landscape Size to Tablet Portrait */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	/*body {
+	form {
 		background-color:teal;
-}*/
+}
 aside #name_first {
 	margin-left: 3%;
 }
@@ -292,9 +396,9 @@ aside #name_first {
 
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
-	/*body {
+	form {
 		background-color:yellow;
-}*/
+}
 aside #name_first {
 	margin-left: 3%;
 }
