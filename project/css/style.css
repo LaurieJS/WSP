@@ -14,8 +14,8 @@ body {
 	font-size: 100%;
 	line-height: 1.4;
 	background: #D7E9B3;
-	/*background-image: url(../images/texture_background.png);*/
-	background-image:url(../images/background_mist.png);
+	background-image: url(../images/texture_background.png);
+	/*background-image:url(../images/background_mist.png);*/
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
@@ -204,6 +204,7 @@ footer {
 footer p {
 	clear: both;
 	font-size: 0.8em;
+	color: #d7e9b3;
 }
 
 /* =============================================================================
