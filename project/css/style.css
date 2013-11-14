@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6, p, aside, article, section, div, form, ul, li {
 }/*comment out when finished, just to see the elements*/
 /*---------header settings---------------------------------------------------*/
 body {
+	/*max-width: 996px;*//*added trying to figure out the grid issues-messed everything up*/
 	font-size: 100%;
 	line-height: 1.4;
 	background: #D7E9B3;
@@ -183,7 +184,7 @@ input:active {
 }
 .lower_aside li {
 	color: #d7e9b3;
-	font-family: 1.1em Cochin, serif;
+	font-family: Cochin, serif;
 	font-size: 1.1em;
 	/*line-height: 1.2;*/
 	padding-top: 3px;
@@ -296,7 +297,7 @@ section p a {
 /* Tablet Portrait size to Base 996px */
 @media only screen and (min-width: 768px) and (max-width: 995px) {
 	form {
-		background-color:mistyrose;
+		/*background-color:mistyrose;*/
 	}/*breaking point colors commented out*/
 	.form_field input {
 	 width: 30%; /*works, but I need to change the originals to %*/
@@ -351,14 +352,14 @@ section p a {
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
 	form {
-		background-color:yellow;
+		/*background-color:yellow;*/
 }
 }
 
 /* Mobile Landscape Size to Tablet Portrait */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	form {
-		background-color:teal;
+		/*background-color:teal;*/
 }
 .phoneRight {
 	position: relative;
@@ -412,7 +413,7 @@ aside #name_first {
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
 	form {
-		background-color:yellow;
+		/*background-color:yellow;*/
 }
 aside #name_first {
 	margin-left: 3%;
