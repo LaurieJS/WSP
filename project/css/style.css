@@ -182,7 +182,7 @@ input:active {
 	color: #d7e9b3;
 }
 .lower_aside {
-	/*margin-top: 125px;*/
+	margin-top: 50px;
 	background-color: #555c47;
 }
 .lower_aside li {
@@ -203,7 +203,7 @@ input:active {
 /*---------footer settings------------*/
 footer {
 	clear: both;
-	background: #555C47;
+	/*background: #555C47;*/
 }
 footer p {
 	clear: both;
@@ -231,6 +231,9 @@ article {
  }
  #title_row1 h3, #title_row2 h3, #title_row3 h3, #title_row4 h3 {
 	 background-color: #ffffff;
+ }
+ #title_row1 h3 {
+	 /*border-top: 1px solid #333;*/
  }
    
 /* =============================================================================
