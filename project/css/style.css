@@ -53,11 +53,11 @@ p {
 	padding: 5px;
 }
 header {
-	overflow: hidden;
+	/*overflow: hidden;*/
 	background-color: #555C47;
 }
 header img {
-	margin-left: 25px;
+	margin-left: 8%; /*was25px;*/
 }
 .phoneRight {
 	font-family: Cochin, serif;
@@ -69,7 +69,7 @@ header img {
 	font-family: Cochin, serif;
 	font-size: 1.1em;
 	color: #D7E9B3;
-	margin-left: 25px;
+	/*margin-left: 25px;*/
 	/*position: relative;
 	left: 14%;*/
 }
@@ -85,7 +85,7 @@ nav ul {
 }
 footer li, nav li {
 	display: inline-block;
-	width: 16.666666%;
+	width: 16.66666666666667%; /*was16.666666%;*/
 	float: left;
 	margin-left: 0%;
 	padding-top: 5px;
@@ -119,6 +119,9 @@ section h3 {
 	background-color: #ffffff;
 }
 section p {
+	background-color: #ffffff;
+}
+section {
 	background-color: #ffffff;
 }
 /*--------- aside settings------------*/
@@ -214,13 +217,19 @@ footer p {
 article {
 	 clear: both;
  }
- article .container h3 {
-	 color: #d7e9b3;
+ /*article .container h3 {
+	 color: #ffffff;
 	 padding: 10px 5px;
- }
- article .grid_3 alpha img {
+ }*/
+ /*article .grid_3 alpha img {
 	 margin-top: 10px;
 	 margin-bottom: 10px;
+	 background-color: #ffffff;
+ }*/
+ #image_row1, #image_row2, #image_row3, #image_row4 {
+	 background-color: #ffffff;
+ }
+ #title_row1 h3, #title_row2 h3, #title_row3 h3, #title_row4 h3 {
 	 background-color: #ffffff;
  }
    
