@@ -53,7 +53,6 @@ p {
 	padding: 5px;
 }
 header {
-	/*overflow: hidden;*/
 	background-color: #555C47;
 }
 header img {
@@ -203,7 +202,7 @@ input:active {
 /*---------footer settings------------*/
 footer {
 	clear: both;
-	/*background: #555C47;*/
+	background: #555C47;
 }
 footer p {
 	clear: both;
