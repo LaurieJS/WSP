@@ -215,7 +215,7 @@ footer p {
    ========================================================================== */
 article {
 	 clear: both;
- }
+}
  /*article .container h3 {
 	 color: #ffffff;
 	 padding: 10px 5px;
@@ -225,15 +225,15 @@ article {
 	 margin-bottom: 10px;
 	 background-color: #ffffff;
  }*/
- #image_row1, #image_row2, #image_row3, #image_row4 {
+#image_row1, #image_row2, #image_row3, #image_row4 {
 	 background-color: #ffffff;
- }
- #title_row1 h3, #title_row2 h3, #title_row3 h3, #title_row4 h3 {
+}
+#title_row1 h3, #title_row2 h3, #title_row3 h3, #title_row4 h3 {
 	 background-color: #ffffff;
- }
- #title_row1 h3 {
+}
+#title_row1 h3 {
 	 /*border-top: 1px solid #333;*/
- }
+}
    
 /* =============================================================================
    Spotlight Styles
@@ -250,7 +250,7 @@ article {
 	background-color: #d04c1e;
 	border: none;
 	border-radius: 7px;
-	width:  15%;
+	width:  130px;
 	height: 40px;
 	margin-top: 20px;
 	margin-bottom: 15px;
@@ -307,34 +307,37 @@ section p a {
 
 /* Tablet Portrait size to Base 996px */
 @media only screen and (min-width: 768px) and (max-width: 995px) {
-	form {
+form {
 		/*background-color:mistyrose;*/
-	}/*breaking point colors commented out*/
-	.form_field input {
-	 width: 30%; /*works, but I need to change the originals to %*/
+}/*breaking point colors commented out*/
+.form_field input {
+	 width: 30%; /*was 30% works, but I need to change the originals to %*/
 }
 .form_field label {
 	font-size: 0.9em;
 }
-	aside #name_first {
+aside .form_field input {
+	width: 53%;
+}
+aside #name_first {
 	margin-left: 0px; /*23%;*/
 }
-	aside #name_last {
+aside #name_last {
 	margin-left: 1%; /*23%;*/
 }
-	aside #address {
+aside #address {
 	margin-left: 10%; /*23%;*/
 }
-	aside #city {
+aside #city {
 	margin-left: 21.5%; /*6%;*/
 }
-	aside #zip_code {
+aside #zip_code {
 	margin-left: 5%; /*23%;*/
 }
-	aside #usrtel {
+aside #usrtel {
 	margin-left: 15.5%; /*23%;*/
 }
-	aside #email_address {
+aside #email_address {
 	margin-left: 15.5%; /*23%;*/
 }
 #schedule_form #name_first {
@@ -362,15 +365,18 @@ section p a {
 
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
-	form {
+form {
 		/*background-color:yellow;*/
 }
 }
 
 /* Mobile Landscape Size to Tablet Portrait */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	form {
+form {
 		/*background-color:teal;*/
+}
+header img {
+	margin-left: 19%;
 }
 .phoneRight {
 	position: relative;
@@ -379,23 +385,26 @@ section p a {
 aside #name_first {
 	margin-left: 3%;
 }
-	aside #name_last {
+aside #name_last {
 	margin-left: 3%;
 }
-	aside #address {
+aside #address {
 	margin-left: 7%;
 }
-	aside #city {
+aside #city {
 	margin-left: 13%;
 }
-	aside #zip_code {
+aside #zip_code {
 	margin-left: 5.1%;
 }
-	aside #usrtel {
+aside #usrtel {
 	margin-left: 9.7%;
 }
-	aside #email_address {
+aside #email_address {
 	margin-left: 10.6%;
+}
+aside .button {
+	margin-left: 21.4%;
 }
 #schedule_form #name_first {
 	margin-left: 3%;
@@ -423,8 +432,29 @@ aside #name_first {
 
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
-	form {
+form {
 		/*background-color:yellow;*/
+}
+header img {
+	position: relative;
+	right: 6.5%;
+}
+.phoneLeft {
+	display: none;
+}
+.phoneRight {
+	display: none;
+}
+nav ul, footer ul {
+}
+nav li, footer li {
+	font-size: 1em;
+	width: 31%;
+}
+nav li {
+	position: relative;
+	bottom: 10px;
+	left: 6px;
 }
 aside #name_first {
 	margin-left: 3%;
@@ -432,20 +462,26 @@ aside #name_first {
 aside #name_last {
 	margin-left: 3%;
 }
-	aside #address {
+aside #address {
 	margin-left: 9.6%;
 }
-	aside #city {
+aside #city {
 	margin-left: 19%;
 }
-	aside #zip_code {
+aside #zip_code {
 	margin-left: 6.3%;
 }
-	aside #usrtel {
-	margin-left: 13.2%;
+aside #usrtel {
+	margin-left: 13.6%;
 }
-	aside #email_address {
-	margin-left: 14%;
+aside #email_address {
+	margin-left: 14.8%;
+}
+aside .button {
+	margin-left: 32.5%;
+}
+.lower_aside {
+	margin-bottom: 20px;
 }
 #schedule_form #name_first {
 	margin-left: 3%;
@@ -454,20 +490,27 @@ aside #name_last {
 	margin-left: 3%;
 }
 #schedule_form #address {
-	margin-left: 8.7%;
+	margin-left: 9.4%;
 }
 #schedule_form #city {
-	margin-left: 17.2%;
+	margin-left: 19%;
 }
 #schedule_form #zip_code {
-	margin-left: 6%;
+	margin-left: 6.4%;
 }
 #schedule_form #usrtel {
-	margin-left: 13%;
-}
-#schedule_form #email_address {
 	margin-left: 14%;
 }
+#schedule_form #email_address {
+	margin-left: 15%;
+}
+#additional_information {
+	width: 69%;
+}
+#schedule_form .button {
+	margin-left: 31%;
+}
+
 }
 
 
