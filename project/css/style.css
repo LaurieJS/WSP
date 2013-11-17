@@ -502,11 +502,11 @@ footer li {
 }
 header li, footer li {
 	font-size: 1em;
-	width: 31%;
+	width: 32.99999%;/*was 31%*/
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-right: 1.2%;
-	padding-left: 1.2%;
+	padding-right: 0%;
+	padding-left: 0%;
 }
 /*nav li {
 	position: relative;
