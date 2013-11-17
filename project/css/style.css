@@ -207,6 +207,9 @@ input:active {
 .lower_aside ul {
 	padding: 5%;
 }
+#home_loweraside {
+	margin-top: 90px;
+}
 /*---------section settings-----------*/ 
  
 /*---------footer settings------------*/
@@ -329,6 +332,10 @@ header img {
 	position: relative;/*working on this trying to fix the icon*/
 	right: 9%;
 }
+#home_loweraside {
+	position: relative;
+	bottom: 40px;
+}
 .form_field input {
 	 width: 30%; /*was 30% works, but I need to change the originals to %*/
 }
@@ -414,10 +421,13 @@ header img {
 }
 .phoneRight {
 	position: relative;
-	bottom: 165px;/*to place the number on the top*/
+	bottom: 165px;
 }
 header li, footer li {
 	font-size: 0.9em;
+}
+#image_row1 img, #image_row2 img, #image_row3 img, #image_row4 img {
+	padding-left: 13.5%;
 }
 .lower_aside {
 	margin-bottom: 20px;
@@ -483,6 +493,9 @@ textarea {
 @media only screen and (max-width: 479px) {
 form {
 		/*background-color:yellow;*/
+}
+aside {
+	margin-top: 20px;
 }
 header img {
 	position: relative;
