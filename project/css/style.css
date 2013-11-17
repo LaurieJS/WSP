@@ -7,7 +7,7 @@ Copyright 2013, Josh Cope
    Site Styles
    ========================================================================== */
 h1, h2, h3, h4, h5, h6, p, aside, article, section, div, form, ul, li {
-	outline: 1px solid #333;
+	/*outline: 1px solid #333;*/
 }/*comment out when finished, just to see the elements*/
 /*---------site-wide settings---------------------------------------------------*/
 body {
