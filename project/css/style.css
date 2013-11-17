@@ -53,7 +53,7 @@ header {
 	background-color: #555C47;
 }
 header img {
-	max-width: 100%; /*just added trying to fix the icon*/
+	max-width: 100%;
 	width: 250px;
 	height: 119px;
 	margin-left: 8.5%; 
@@ -72,18 +72,10 @@ header img {
 	color: #D7E9B3;
 	margin-left: 2%;
 }
-/*h1 {
-	text-align: center;
-}*/
 h1  {
-	/*background: url(../images/creativedesigns_icons.png) 0 0 no-repeat;
-	width: 250px;
-	height: 119px;*/
-	/*padding-left: 18%;*/
-	/*margin-left: 8.5%;*/
 	font-size: 0em; /*Is it OK to set this font to zero?*/
 	text-indent: -9999px;
-}/*just added, may need to remove this section.*/
+}/
 a {
 	text-decoration: none;
 }
@@ -93,16 +85,16 @@ nav ul {
 }
 footer li, nav li {
 	display: inline-block;
-	width: 16.66666666666667%; /*was16.666666%;*/
+	width: 16.66666666666667%; 
 	float: left;
 	margin-left: 0%;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;
-	/*padding-left: 10%;*/
 }
 li a {
 	color: #ffffff;
+	text-decoration: none;
 }
 li a:hover {
 	color: #d04c1e;
@@ -113,13 +105,6 @@ li a:active {
 li.selected a {
 	 color: #313b31;
 }
-.grid_6 img {
-	max-width: 100%;
-	min-width: 100%
-}
-
-	
-
 /*---------main settings--------------*/
 img {
 	max-width: 100%;
@@ -198,7 +183,6 @@ input:active {
 	color: #d7e9b3;
 	font-family: Cochin, serif;
 	font-size: 1.1em;
-	/*line-height: 1.2;*/
 	padding-top: 3px;
 	padding-right: 1%;
 	padding-bottom: 3px;
@@ -222,38 +206,24 @@ footer p {
 	font-size: 0.8em;
 	color: #d7e9b3;
 }
-
 /* =============================================================================
    Services Styles
    ========================================================================== */
 article {
 	 clear: both;
 }
- /*article .container h3 {
-	 color: #ffffff;
-	 padding: 10px 5px;
- }*/
- /*article .grid_3 alpha img {
-	 margin-top: 10px;
-	 margin-bottom: 10px;
-	 background-color: #ffffff;
- }*/
-#image_row1, #image_row2, #image_row3, #image_row4 {
+#image_rowAwnings {
+	padding-bottom: 35px;
+}
+#image_rowSunrooms, #image_rowPatios, #image_rowAdjustable, #image_rowAwnings {
 	 background-color: #ffffff;
 }
-#title_row1 h3, #title_row2 h3, #title_row3 h3, #title_row4 h3 {
+#title_rowSunrooms h3, #title_rowPatios h3, #title_rowAdjustable h3, #title_rowAwnings h3 {
 	 background-color: #ffffff;
 }
-#title_row1 h3 {
-	 /*border-top: 1px solid #333;*/
-}
-   
 /* =============================================================================
    Spotlight Styles
    ========================================================================== */
-   
-   
-   
 /* =============================================================================
    Schedule Styles
    ========================================================================== */ 
@@ -299,37 +269,30 @@ section form {
 textarea {
 	margin-left: 10%;
 }
-   
-   
 /* =============================================================================
    About Us Styles
    ========================================================================== */
-   
-   
-   
- /* =============================================================================
+/* =============================================================================
    Contact Us Styles
    ========================================================================== */
+#contact_loweraside {
+	margin-bottom: 20px;
+}
 section p a {
 	text-decoration: none;
 	color: #d04c1e;
 }
-   
-       
-
 /* =============================================================================
    Media Queries
    ========================================================================== */
-
 /* Tablet Portrait size to Base 996px */
 @media only screen and (min-width: 768px) and (max-width: 995px) {
 form {
 		/*background-color:mistyrose;*/
 }/*breaking point colors commented out*/
 header img {
-	/*padding-left: 18%;*/
 	max-width: 100%;
-	position: relative;/*working on this trying to fix the icon*/
+	position: relative;
 	right: 9%;
 }
 #home_loweraside {
@@ -337,7 +300,7 @@ header img {
 	bottom: 40px;
 }
 .form_field input {
-	 width: 30%; /*was 30% works, but I need to change the originals to %*/
+	 width: 30%; 
 }
 aside .form_field label {
 	font-size: 0.9em;
@@ -349,25 +312,25 @@ aside .form_field input {
 	width: 53%;
 }
 aside #name_first {
-	margin-left: 0px; /*23%;*/
+	margin-left: 0px; 
 }
 aside #name_last {
-	margin-left: 1%; /*23%;*/
+	margin-left: 1%; 
 }
 aside #address {
-	margin-left: 10%; /*23%;*/
+	margin-left: 10%; 
 }
 aside #city {
-	margin-left: 21.5%; /*6%;*/
+	margin-left: 21.5%;
 }
 aside #zip_code {
-	margin-left: 5%; /*23%;*/
+	margin-left: 5%; 
 }
 aside #usrtel {
-	margin-left: 15.5%; /*23%;*/
+	margin-left: 15.5%; 
 }
 aside #email_address {
-	margin-left: 15.5%; /*23%;*/
+	margin-left: 15.5%; 
 }
 #schedule_form #name_first {
 	margin-left: 1.9%;
@@ -401,14 +364,12 @@ textarea {
 	margin-left: 12.5%;
 }
 }
-
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
 form {
 		/*background-color:yellow;*/
 }
 }
-
 /* Mobile Landscape Size to Tablet Portrait */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 form {
@@ -426,7 +387,7 @@ header img {
 header li, footer li {
 	font-size: 0.9em;
 }
-#image_row1 img, #image_row2 img, #image_row3 img, #image_row4 img {
+#image_rowSunrooms img, #image_rowPatios img, #image_rowAdjustable img, #image_rowAwnings img {
 	padding-left: 13.5%;
 }
 .lower_aside {
@@ -488,7 +449,6 @@ textarea {
 	width: 51%;
 }
 }
-
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
 form {
@@ -507,25 +467,12 @@ header img {
 .phoneRight {
 	display: none;
 }
-header ul {
-	/*padding-left:*/ /*was: 7%;*/
-}
-footer li {
- /*padding-left: 2.69%;*/
-}
 header li, footer li {
 	font-size: 1em;
-	width: 32.99999%;/*was 31%*/
+	width: 32.99999%;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-right: 0%;
-	padding-left: 0%;
 }
-/*nav li {
-	position: relative;
-	bottom: 10px;
-	left: 6px;
-}*/
 aside #name_first {
 	margin-left: 3%;
 }
@@ -584,10 +531,7 @@ textarea {
 	width: 65%;
 	margin-left: 30%;
 }
-
 }
-
-
 /* =============================================================================
    Font-Face
    ========================================================================== */
