@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6, p, aside, article, section, div, form, ul, li {
 body {
 	font-size: 100%;
 	line-height: 1.4;
-	background: #D7E9B3;
+	background: #cbdca9;
 	background-image: url(../images/texture_background.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -53,7 +53,6 @@ header {
 	background-color: #555C47;
 }
 header img {
-	max-width: 100%;
 	width: 250px;
 	height: 119px;
 	margin-left: 8.5%; 
@@ -75,7 +74,7 @@ header img {
 h1  {
 	font-size: 0em; /*Is it OK to set this font to zero?*/
 	text-indent: -9999px;
-}/
+}
 a {
 	text-decoration: none;
 }
@@ -121,7 +120,7 @@ section {
 /*--------- aside settings------------*/
 aside {
 	overflow: hidden;
-	margin-top: 0px; /*problems*/
+	margin-top: 0px; 
 }
 aside #name_first {
 	margin-left: 4.5%;
@@ -237,10 +236,13 @@ article {
 	height: 40px;
 	margin-top: 20px;
 	margin-bottom: 15px;
-	margin-left: 10%;
+	margin-left: 13.5%;
 }
 #schedule_form input {
 	width: 20%;
+}
+#schedule_form p {
+	padding-bottom: 15px;
 }
 section form {
 	line-height: 2.0;
@@ -249,25 +251,29 @@ section form {
 	margin-left: 1.9%;
 }
 #schedule_form #name_last {
-	margin-left: 2%;
+	margin-left: 2.2%;
 }
 #schedule_form #address {
-	margin-left: 3.7%;
+	margin-left: 4.6%;
 }
 #schedule_form #city {
-	margin-left: 6.2%;
+	margin-left: 8.1%;
 }
 #schedule_form #zip_code {
-	margin-left: 2.85%;
+	margin-left: 3.55%;
 }
 #schedule_form #usrtel {
-	margin-left: 4.85%;
+	margin-left: 6.35%;
 }
 #schedule_form #email_address {
-	margin-left: 5.2%;
+	margin-left: 6.59%;
 }
 textarea {
-	margin-left: 10%;
+	margin-left: 13.1%;
+}
+#schedule_loweraside {
+	position: relative;
+	bottom: 60px;
 }
 /* =============================================================================
    About Us Styles
@@ -336,32 +342,32 @@ aside #email_address {
 	margin-left: 1.9%;
 }
 #schedule_form #name_last {
-	margin-left: 2.2%;
+	margin-left: 2.3%;
 }
 #schedule_form #address {
-	margin-left: 4.3%;
+	margin-left: 5.4%;
 }
 #schedule_form #city {
-	margin-left: 7.7%;
+	margin-left: 9.9%;
 }
 #schedule_form #zip_code {
-	margin-left: 3.35%;
+	margin-left: 4.1%;
 }
 #schedule_form #usrtel {
-	margin-left: 5.9%;
+	margin-left: 7.6%;
 }
 #schedule_form #email_address {
-	margin-left: 6.3%;
+	margin-left: 8%;
 }
 #schedule_form input {
-	width: 25%;
+	width: 35%;
 }
 textarea {
-	margin-left: 12.3%;
+	margin-left: 16.3%;
 }
 #schedule_form .button {
-	width: 25%;
-	margin-left: 12.5%;
+	width: 36.5%;
+	margin-left: 16.5%;
 }
 }
 /* All Mobile Sizes */
@@ -375,6 +381,9 @@ form {
 form {
 		/*background-color:teal;*/
 }
+body {
+	background-image: none;
+}
 header img {
 	margin-left: 20%;
 	position: relative;
@@ -387,8 +396,27 @@ header img {
 header li, footer li {
 	font-size: 0.9em;
 }
+#image_rowSunrooms {
+	padding-top: 20px;
+}
+#image_rowSunrooms img, #image_rowPatios img, #image_rowAdjustable img, #image_rowAwnings img {
+	padding-bottom: 15px;
+}
 #image_rowSunrooms img, #image_rowPatios img, #image_rowAdjustable img, #image_rowAwnings img {
 	padding-left: 13.5%;
+}
+#title_rowSunrooms h3, #title_rowPatios h3, #title_rowAdjustable h3, #title_rowAwnings h3 {
+	padding-left: 14%;
+}
+#home_aside h3, #home_aside form {
+	position: relative;
+	top: 20px;
+}
+#spotlight_aside {
+	padding-top: 20px;
+}
+#aboutus_aside {
+	padding-top: 20px;
 }
 .lower_aside {
 	margin-bottom: 20px;
@@ -430,29 +458,52 @@ aside .button {
 	margin-left: 13.5%;
 }
 #schedule_form #zip_code {
-	margin-left: 5.7%;
+	margin-left: 5.8%;
 }
 #schedule_form #usrtel {
-	margin-left: 10.5%;
+	margin-left: 10.6%;
 }
 #schedule_form #email_address {
-	margin-left: 11.2%;
+	margin-left: 10.9%;
 }
 #schedule_form input {
 	width: 50%;
 }
 textarea {
 	margin-left: 22%;
+	width: 65%;
 }
 #schedule_form .button {
 	margin-left: 22%;
-	width: 51%;
+	width: 53%;
+}
+#schedule_loweraside {
+	position: relative;
+	bottom: 10px;
+}
+#services_aside, #services_loweraside {
+	display: none;
+}
+#contact_aside {
+	margin-top: 20px;
 }
 }
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
 form {
 		/*background-color:yellow;*/
+}
+body {
+	background-image: none;
+}
+h2 {
+	font-size: 1.3em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+h3 {
+	font-size: 1.2em;
 }
 aside {
 	margin-top: 20px;
@@ -472,6 +523,9 @@ header li, footer li {
 	width: 32.99999%;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+#image_rowSunrooms img, #image_rowPatios img, #image_rowAdjustable img, #image_rowAwnings img {
+	padding-bottom: 15px;
 }
 aside #name_first {
 	margin-left: 3%;
@@ -522,14 +576,21 @@ aside .button {
 	margin-left: 15%;
 }
 textarea {
-	width: 82.5%;
+	width: 80.5%;
 }
 #schedule_form input {
 	width: 60%;
 }
 #schedule_form .button {
 	width: 65%;
-	margin-left: 30%;
+	margin-left: 29%;
+}
+#schedule_loweraside {
+	position:relative;
+	bottom: 15px;
+}
+#services_aside, #services_loweraside {
+	display: none;
 }
 }
 /* =============================================================================
