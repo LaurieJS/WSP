@@ -89,7 +89,7 @@ footer li, nav li {
 	margin-left: 0%;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	text-align: center;
+	text-align: center;/*just commented out trying to fix the grid*/
 }
 li a {
 	color: #ffffff;
