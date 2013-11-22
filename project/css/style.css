@@ -35,7 +35,7 @@ h3 {
 	font-size: 1.2em;
 	background-color: #555c47;
 	padding-top: 5px;
-	padding-bottom: 5px;
+	/*padding-bottom: 5px;*/
 	padding-left: 5px;
 }
 h4 {
@@ -45,9 +45,14 @@ h4 {
 	padding-left: 5px;
 	color: #D7E9B3;
 }
-p {
-	font-family:"Mongolian Baiti", serif;
-	padding: 5px;
+article p, section p {
+	font-family:"Mongolian Baiti", serif;/*was just p/added article and section*/
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+#image_fix p:nth-of-type(1) {
+	padding-top: 5px;
 }
 header {
 	background-color: #555C47;
@@ -80,13 +85,28 @@ a {
 }
 nav ul {
 	overflow: hidden;
-	background-color: #555C47;
+	/*background-color: #555C47;*/
 }
-footer li, nav li {
+nav li {
+	background-color: #555c47;
 	display: inline-block;
-	width: 16.66666666666667%; 
+	width: 16%; /*16.66666666666668%;*/ 
 	float: left;
-	margin-left: 0%;
+	/*margin-left: 0%;*/
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;/*just commented out trying to fix the grid*/
+	border:1px solid #d7e9b3;/*just added this section will need to change for the footer*/
+  border-bottom:none;
+  border-radius:4px 4px 0 0;
+  margin-right:1px;
+}
+footer li {
+	background-color: #555c47;
+	display: inline-block;
+	width: 16.66666666666668%;
+	float: left;
+	/*margin-left: 0%;*/
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;/*just commented out trying to fix the grid*/
@@ -96,13 +116,20 @@ li a {
 	text-decoration: none;
 }
 li a:hover {
-	color: #d04c1e;
+	color:#d04c1e;
 }
 li a:active {
 	color: #d7e9b3;
 }
-li.selected a {
-	 color: #313b31;
+nav .selected {
+	background-color: #d7e9b3;
+	color: #d04c1e;
+}
+.selected a {
+	color: #d04c1e;
+}
+.author_link a {
+	color: #ffffff;
 }
 /*---------main settings--------------*/
 img {
@@ -119,8 +146,10 @@ section {
 }
 /*--------- aside settings------------*/
 aside {
-	overflow: hidden;
-	margin-top: 0px; 
+	overflow: hidden; 
+}
+aside h3 {
+	padding-top: 20px;
 }
 aside #name_first {
 	margin-left: 4.5%;
@@ -175,7 +204,7 @@ input:active {
 	color: #d7e9b3;
 }
 .lower_aside {
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	background-color: #555c47;
 }
 .lower_aside li {
@@ -188,10 +217,11 @@ input:active {
 	padding-left: 1%;
 }
 .lower_aside ul {
-	padding: 5%;
+	padding: 5%; /*was 5%-0 didn't work*/
 }
 #home_loweraside {
-	margin-top: 90px;
+	margin-top: 121px;
+	margin-bottom: 20px; 
 }
 /*---------section settings-----------*/ 
  
@@ -204,6 +234,9 @@ footer p {
 	clear: both;
 	font-size: 0.8em;
 	color: #d7e9b3;
+	margin-top: 50px;
+	margin-bottom: 2px;
+	padding-left: 5px;
 }
 /* =============================================================================
    Services Styles
@@ -220,9 +253,16 @@ article {
 #title_rowSunrooms h3, #title_rowPatios h3, #title_rowAdjustable h3, #title_rowAwnings h3 {
 	 background-color: #ffffff;
 }
+#services_loweraside {
+		margin-top: 108px;
+}
 /* =============================================================================
    Spotlight Styles
    ========================================================================== */
+#spotlight_loweraside {
+	margin-top: 44px;
+	margin-bottom: 20px;
+}
 /* =============================================================================
    Schedule Styles
    ========================================================================== */ 
@@ -273,15 +313,23 @@ textarea {
 }
 #schedule_loweraside {
 	position: relative;
-	bottom: 60px;
+	top: 0px;
 }
 /* =============================================================================
    About Us Styles
    ========================================================================== */
+#aboutus_loweraside {
+	margin-top: 35px;
+}
+.signature {
+	font-family: 'Sofia', cursive;
+	font-size: 1.6em;
+}
 /* =============================================================================
    Contact Us Styles
    ========================================================================== */
 #contact_loweraside {
+	margin-top: 71px;
 	margin-bottom: 20px;
 }
 section p a {
@@ -301,9 +349,23 @@ header img {
 	position: relative;
 	right: 9%;
 }
+/*--------------------Aside settings---------------*/
 #home_loweraside {
 	position: relative;
-	bottom: 40px;
+	bottom: 110px;
+	margin-bottom: -90px;
+}
+#services_loweraside {
+	margin-top: 0px;
+}
+#spotlight_loweraside {
+	margin-top:5px;
+}
+#aboutus_loweraside {
+	margin-top: 3px;
+}
+#contact_loweraside {
+	margin-top: 0px;
 }
 .form_field input {
 	 width: 30%; 
@@ -338,26 +400,27 @@ aside #usrtel {
 aside #email_address {
 	margin-left: 15.5%; 
 }
+/*---------------Schedule Page Settings------------*/
 #schedule_form #name_first {
-	margin-left: 1.9%;
+	margin-left: 2.5%;
 }
 #schedule_form #name_last {
-	margin-left: 2.3%;
+	margin-left: 2.8%;
 }
 #schedule_form #address {
-	margin-left: 5.4%;
+	margin-left: 5.75%;
 }
 #schedule_form #city {
-	margin-left: 9.9%;
+	margin-left: 10.15%;
 }
 #schedule_form #zip_code {
-	margin-left: 4.1%;
+	margin-left: 4.2%;
 }
 #schedule_form #usrtel {
-	margin-left: 7.6%;
+	margin-left: 7.8%;
 }
 #schedule_form #email_address {
-	margin-left: 8%;
+	margin-left: 8.25%;
 }
 #schedule_form input {
 	width: 35%;
@@ -384,6 +447,17 @@ form {
 body {
 	background-image: none;
 }
+section p, article p {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+h2 {
+	padding-left: 20px;
+}
+section h3, article h3 {
+	padding-left: 20px;
+}
+/*-----------------Header Settings-----------*/
 header img {
 	margin-left: 20%;
 	position: relative;
@@ -391,23 +465,41 @@ header img {
 }
 .phoneRight {
 	position: relative;
-	bottom: 165px;
+	bottom: 155px;
 }
 header li, footer li {
 	font-size: 0.9em;
 }
+nav li {
+	width: 15.9%;
+}
+/*----------------------Main Content Settings-------------*/
+#image_fix div {
+	width: 460px; /*just added to fix the image*/
+	height: auto;
+}
+#image_fix {
+	width: 460px; /*just added to fix the image*/
+	padding: 0;
+}
+.container .grid_3 {
+	width: 460px; /*just added to fix the image*/
+}
+/*--------------Services Page--------------------*/
 #image_rowSunrooms {
 	padding-top: 20px;
 }
-#image_rowSunrooms img, #image_rowPatios img, #image_rowAdjustable img, #image_rowAwnings img {
-	padding-bottom: 15px;
+#image_rowAwnings {
+	margin-bottom: -20px;
 }
 #image_rowSunrooms img, #image_rowPatios img, #image_rowAdjustable img, #image_rowAwnings img {
-	padding-left: 13.5%;
+	padding-bottom: 15px;
+	padding-left: 12%;
 }
 #title_rowSunrooms h3, #title_rowPatios h3, #title_rowAdjustable h3, #title_rowAwnings h3 {
 	padding-left: 14%;
 }
+/*--------------Aside settings for different pages-----------*/
 #home_aside h3, #home_aside form {
 	position: relative;
 	top: 20px;
@@ -418,74 +510,89 @@ header li, footer li {
 #aboutus_aside {
 	padding-top: 20px;
 }
-.lower_aside {
-	margin-bottom: 20px;
-}
-aside #name_first {
-	margin-left: 3%;
-}
-aside #name_last {
-	margin-left: 3%;
-}
-aside #address {
-	margin-left: 7%;
-}
-aside #city {
-	margin-left: 13%;
-}
-aside #zip_code {
-	margin-left: 5.1%;
-}
-aside #usrtel {
-	margin-left: 9.7%;
-}
-aside #email_address {
-	margin-left: 10.6%;
-}
-aside .button {
-	margin-left: 21.4%;
-}
-#schedule_form #name_first {
-	margin-left: 3%;
-}
-#schedule_form #name_last {
-	margin-left: 3.5%;
-}
-#schedule_form #address {
-	margin-left: 7.5%;
-}
-#schedule_form #city {
-	margin-left: 13.5%;
-}
-#schedule_form #zip_code {
-	margin-left: 5.8%;
-}
-#schedule_form #usrtel {
-	margin-left: 10.6%;
-}
-#schedule_form #email_address {
-	margin-left: 10.9%;
-}
-#schedule_form input {
-	width: 50%;
-}
-textarea {
-	margin-left: 22%;
-	width: 65%;
-}
-#schedule_form .button {
-	margin-left: 22%;
-	width: 53%;
-}
-#schedule_loweraside {
-	position: relative;
-	bottom: 10px;
-}
 #services_aside, #services_loweraside {
 	display: none;
 }
 #contact_aside {
 	margin-top: 20px;
+}
+#home_aside form {
+	margin-bottom: -60px;
+}
+/*---------------Aside Settings----------------*/
+.lower_aside {
+	margin-bottom: 20px;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+aside form, aside label, aside .button {
+	padding-left: 15px;
+}
+aside #name_first {
+	margin-left: 3%;
+}
+aside #name_last {
+	margin-left: 3.2%;
+}
+aside #address {
+	margin-left: 6.9%;
+}
+aside #city {
+	margin-left: 12.3%;
+}
+aside #zip_code {
+	margin-left: 5.2%;
+}
+aside #usrtel {
+	margin-left: 9.5%;
+}
+aside #email_address {
+	margin-left: 10.2%;
+}
+aside .button {
+	width: 58.5%;
+	margin-left: 20.5%;
+}
+/*----------------------Settings Schedule Page---------*/
+#schedule_form input, #schedule_form label, #schedule_form .button {
+	padding-left: 20px;
+}
+#schedule_form #name_first {
+	margin-left: 3%;
+}
+#schedule_form #name_last {
+	margin-left: 3.1%;
+}
+#schedule_form #address {
+	margin-left: 6.73%;
+}
+#schedule_form #city {
+	margin-left: 12.1%;
+}
+#schedule_form #zip_code {
+	margin-left: 4.9%;
+}
+#schedule_form #usrtel {
+	margin-left: 9.3%;
+}
+#schedule_form #email_address {
+	margin-left: 9.9%;
+}
+#schedule_form input {
+	width: 50%;
+}
+textarea {
+	margin-left: 12%;
+	width: 65%;
+}
+#schedule_form .button {
+	margin-bottom: 40px;
+	margin-left: 23.2%;
+	width: 55%;
+}
+#schedule_loweraside {
+	position: relative;
+	bottom: 10px;
 }
 }
 /* Mobile Portrait Size to Mobile Landscape Size */
@@ -499,15 +606,26 @@ body {
 h2 {
 	font-size: 1.3em;
 	padding-top: 5px;
+	padding-right: 15px;
 	padding-bottom: 5px;
-	padding-left: 5px;
+	padding-left: 15px;
 }
 h3 {
 	font-size: 1.2em;
 }
-aside {
-	margin-top: 20px;
+section p, article p {
+	padding-right: 15px;
+	padding-left: 15px;
 }
+section h3, article h3 {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+footer p {
+	padding-top: 15px;
+	font-size: 0.8em;
+}
+/*---------------------Header-------*/
 header img {
 	position: relative;
 	right: 7%;
@@ -524,71 +642,113 @@ header li, footer li {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+nav li {
+	width: 30%;
+	border-bottom: 1px solid #d7e9b3;
+	border-radius:4px 4px 4px 4px;
+	margin: 3px;
+}
+/*--------Main Content-----------------------*/
+#image_fix div {
+	width: 300px; /*just added to fix the image*/
+}
+#image_fix {
+	width: 300px; /*just added to fix the image*/
+	padding: 0;
+}
+#image_rowAwnings {
+	margin-bottom: -25px;
+}
 #image_rowSunrooms img, #image_rowPatios img, #image_rowAdjustable img, #image_rowAwnings img {
+	position: relative;
+	right: 20px;
 	padding-bottom: 15px;
+}
+#title_rowSunrooms h3, #title_rowPatios h3, #title_rowAdjustable h3, #title_rowAwnings h3 {
+	padding-left: 0px;
+}
+.container .grid_3 {
+	width: 300px; /*just added to fix the image*/
+}
+/*---------Aside Form Settings--------------------*/
+aside {
+	margin-top: 20px;
+}
+#home_aside form {
+	margin-bottom: -80px;/*for home*/
+}
+aside input, aside label, aside .button {
+	margin-left: 10px;
 }
 aside #name_first {
 	margin-left: 3%;
 }
 aside #name_last {
-	margin-left: 3%;
+	margin-left: 3.4%;
 }
 aside #address {
-	margin-left: 9.6%;
+	margin-left: 9%;
 }
 aside #city {
-	margin-left: 19%;
+	margin-left: 17.4%;
 }
 aside #zip_code {
-	margin-left: 6.3%;
+	margin-left: 6.4%;
 }
 aside #usrtel {
-	margin-left: 13.6%;
+	margin-left: 12.9%;
 }
 aside #email_address {
-	margin-left: 14.8%;
+	margin-left: 13.9%;
 }
 aside .button {
-	margin-left: 32.5%;
+	margin-left: 32.8%;
 }
 .lower_aside {
+/*just added trying to fix the header image-will this widen the box?*/
 	margin-bottom: 20px;
 }
+/*----------------------------Schedule Form Settings------------*/
 #schedule_form #name_first {
 	margin-left: 3%;
 }
 #schedule_form #name_last {
-	margin-left: 3%;
+	margin-left: 3.4%;
 }
 #schedule_form #address {
-	margin-left: 9.4%;
+	margin-left: 9.3%;
 }
 #schedule_form #city {
-	margin-left: 19%;
+	margin-left: 17.5%;
 }
 #schedule_form #zip_code {
 	margin-left: 6.4%;
 }
 #schedule_form #usrtel {
-	margin-left: 14%;
+	margin-left: 13%;
 }
 #schedule_form #email_address {
-	margin-left: 15%;
+	margin-left: 14%;
 }
 textarea {
 	width: 80.5%;
+	padding-right: 0px;
+}
+#schedule_form input, #schedule_form label, #schedule_form .button {
+	margin-left: 10px;
 }
 #schedule_form input {
 	width: 60%;
 }
 #schedule_form .button {
 	width: 65%;
-	margin-left: 29%;
+	margin-left: 30%;
 }
 #schedule_loweraside {
 	position:relative;
 	bottom: 15px;
 }
+/*------------------Services aside----------*/
 #services_aside, #services_loweraside {
 	display: none;
 }
