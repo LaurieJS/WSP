@@ -347,6 +347,18 @@ section p a {
 	color: #d04c1e;
 }
 /* =============================================================================
+   Error 404 Styles
+   ========================================================================== */
+#error {
+	background-color: #ffffff;
+}
+#error img {
+	margin-left: -16px;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	/*align-content:center;*/
+}
+/* =============================================================================
    Media Queries
    ========================================================================== */
 /* Tablet Portrait size to Base 996px */
@@ -441,6 +453,12 @@ textarea {
 #schedule_form .button {
 	width: 36.5%;
 	margin-left: 16.5%;
+}
+/*-----------------Error 404 settings-----------*/
+#error img {
+	margin-left: -10px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 }
 /* All Mobile Sizes */
@@ -604,6 +622,12 @@ textarea {
 	position: relative;
 	bottom: 10px;
 }
+/*-----------------Error 404 settings-----------*/
+#error {
+	padding-top: 55px;
+	padding-bottom: 55px;
+	padding-left: 35px;
+}
 }
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
@@ -761,6 +785,12 @@ textarea {
 /*------------------Services aside----------*/
 #services_aside, #services_loweraside {
 	display: none;
+}
+/*-----------------Error 404 settings-----------*/
+#error {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 35px;
 }
 }
 /* =============================================================================
