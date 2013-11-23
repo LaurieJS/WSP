@@ -92,11 +92,10 @@ nav li {
 	display: inline-block;
 	width: 16%; /*16.66666666666668%;*/ 
 	float: left;
-	/*margin-left: 0%;*/
 	padding-top: 5px;
 	padding-bottom: 5px;
-	text-align: center;/*just commented out trying to fix the grid*/
-	border:1px solid #d7e9b3;/*just added this section will need to change for the footer*/
+	text-align: center;
+	border: 1px solid #d7e9b3;
   border-bottom:none;
   border-radius:4px 4px 0 0;
   margin-right:1px;
@@ -106,7 +105,6 @@ footer li {
 	display: inline-block;
 	width: 16.66666666666668%;
 	float: left;
-	/*margin-left: 0%;*/
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;/*just commented out trying to fix the grid*/
@@ -128,8 +126,8 @@ nav .selected {
 .selected a {
 	color: #d04c1e;
 }
-.author_link a {
-	color: #ffffff;
+.author_link {
+	color: #fff;
 }
 /*---------main settings--------------*/
 img {
@@ -149,7 +147,8 @@ aside {
 	overflow: hidden; 
 }
 aside h3 {
-	padding-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 aside #name_first {
 	margin-left: 4.5%;
@@ -195,13 +194,14 @@ aside .button {
 	margin-left: 40.5%;
 }
 input:hover {
-	color: #555c47;
+	color: #333;
 }
 input:focus {
 	color: #333;
 }
 input:active {
-	color: #d7e9b3;
+	color: #fff;
+	text-shadow: 1px 1px 4px #FFF;
 }
 .lower_aside {
 	/*margin-top: 50px;*/
@@ -280,6 +280,16 @@ article {
 }
 #schedule_form input {
 	width: 20%;
+}
+#schedule_form input:hover {
+	color: #333;
+}
+#schedule_form input:focus {
+	color: #333;
+}
+#schedule_form input:active {
+	color: #fff;
+	text-shadow: 1px 1px 4px #FFF;
 }
 #schedule_form p {
 	padding-bottom: 15px;
@@ -650,10 +660,10 @@ nav li {
 }
 /*--------Main Content-----------------------*/
 #image_fix div {
-	width: 300px; /*just added to fix the image*/
+	width: 300px; 
 }
 #image_fix {
-	width: 300px; /*just added to fix the image*/
+	width: 300px; 
 	padding: 0;
 }
 #image_rowAwnings {
@@ -665,17 +675,17 @@ nav li {
 	padding-bottom: 15px;
 }
 #title_rowSunrooms h3, #title_rowPatios h3, #title_rowAdjustable h3, #title_rowAwnings h3 {
-	padding-left: 0px;
+	margin-left: -25px;
 }
 .container .grid_3 {
-	width: 300px; /*just added to fix the image*/
+	width: 300px; 
 }
 /*---------Aside Form Settings--------------------*/
 aside {
 	margin-top: 20px;
 }
 #home_aside form {
-	margin-bottom: -80px;/*for home*/
+	margin-bottom: -80px;
 }
 aside input, aside label, aside .button {
 	margin-left: 10px;
