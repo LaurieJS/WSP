@@ -220,7 +220,7 @@ input:active {
 	padding: 5%; /*was 5%-0 didn't work*/
 }
 #home_loweraside {
-	margin-top: 121px;
+	margin-top: 127px;
 	margin-bottom: 20px; 
 }
 /*---------section settings-----------*/ 
@@ -254,13 +254,13 @@ article {
 	 background-color: #ffffff;
 }
 #services_loweraside {
-		margin-top: 108px;
+	margin-top: 114px;
 }
 /* =============================================================================
    Spotlight Styles
    ========================================================================== */
 #spotlight_loweraside {
-	margin-top: 44px;
+	margin-top: 52px;
 	margin-bottom: 20px;
 }
 /* =============================================================================
@@ -329,7 +329,7 @@ textarea {
    About Us Styles
    ========================================================================== */
 #aboutus_loweraside {
-	margin-top: 35px;
+	margin-top: 41px;
 }
 .signature {
 	font-family: 'Sofia', cursive;
@@ -339,7 +339,7 @@ textarea {
    Contact Us Styles
    ========================================================================== */
 #contact_loweraside {
-	margin-top: 71px;
+	margin-top: 75px;
 	margin-bottom: 20px;
 }
 section p a {
