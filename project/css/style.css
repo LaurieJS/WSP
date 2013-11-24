@@ -457,8 +457,8 @@ textarea {
 /*-----------------Error 404 settings-----------*/
 #error img {
 	margin-left: -10px;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
 }
 /* All Mobile Sizes */
@@ -788,8 +788,8 @@ textarea {
 }
 /*-----------------Error 404 settings-----------*/
 #error {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 	padding-left: 35px;
 }
 }
