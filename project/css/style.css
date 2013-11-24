@@ -2,7 +2,6 @@
 Responsive 996px grid system ~ Style CSS.
 Copyright 2013, Josh Cope
 */
-
 /* =============================================================================
    Site Styles
    ========================================================================== */
@@ -35,7 +34,6 @@ h3 {
 	font-size: 1.2em;
 	background-color: #555c47;
 	padding-top: 5px;
-	/*padding-bottom: 5px;*/
 	padding-left: 5px;
 }
 h4 {
@@ -46,7 +44,7 @@ h4 {
 	color: #D7E9B3;
 }
 article p, section p {
-	font-family:"Mongolian Baiti", serif;/*was just p/added article and section*/
+	font-family:"Mongolian Baiti", serif;
 	padding-right: 5px;
 	padding-bottom: 10px;
 	padding-left: 5px;
@@ -85,12 +83,11 @@ a {
 }
 nav ul {
 	overflow: hidden;
-	/*background-color: #555C47;*/
 }
 nav li {
 	background-color: #555c47;
 	display: inline-block;
-	width: 16%; /*16.66666666666668%;*/ 
+	width: 16%; /*16.66666666666668%;, made them smaller for tabs*/ 
 	float: left;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -107,7 +104,7 @@ footer li {
 	float: left;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	text-align: center;/*just commented out trying to fix the grid*/
+	text-align: center;
 }
 li a {
 	color: #ffffff;
@@ -204,7 +201,6 @@ input:active {
 	text-shadow: 1px 1px 4px #FFF;
 }
 .lower_aside {
-	/*margin-top: 50px;*/
 	background-color: #555c47;
 }
 .lower_aside li {
@@ -217,14 +213,13 @@ input:active {
 	padding-left: 1%;
 }
 .lower_aside ul {
-	padding: 5%; /*was 5%-0 didn't work*/
+	padding: 5%; 
 }
 #home_loweraside {
 	margin-top: 127px;
 	margin-bottom: 20px; 
 }
 /*---------section settings-----------*/ 
- 
 /*---------footer settings------------*/
 footer {
 	clear: both;
@@ -356,7 +351,6 @@ section p a {
 	margin-left: -16px;
 	padding-top: 45px;
 	padding-bottom: 45px;
-	/*align-content:center;*/
 }
 /* =============================================================================
    Media Queries
@@ -378,16 +372,16 @@ header img {
 	margin-bottom: -90px;
 }
 #services_loweraside {
-	margin-top: 0px;
+	margin-top: 5px;
 }
 #spotlight_loweraside {
 	margin-top:5px;
 }
 #aboutus_loweraside {
-	margin-top: 3px;
+	margin-top: 9px;
 }
 #contact_loweraside {
-	margin-top: 0px;
+	margin-top: 5px;
 }
 .form_field input {
 	 width: 30%; 
@@ -464,13 +458,13 @@ textarea {
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
 form {
-		/*background-color:yellow;*/
+		/*background-color:yellow;*//*breaking point colors commented out*/
 }
 }
 /* Mobile Landscape Size to Tablet Portrait */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 form {
-		/*background-color:teal;*/
+		/*background-color:teal;*//*breaking point colors commented out*/
 }
 body {
 	background-image: none;
@@ -503,15 +497,15 @@ nav li {
 }
 /*----------------------Main Content Settings-------------*/
 #image_fix div {
-	width: 460px; /*just added to fix the image*/
+	width: 460px; 
 	height: auto;
 }
 #image_fix {
-	width: 460px; /*just added to fix the image*/
+	width: 460px; 
 	padding: 0;
 }
 .container .grid_3 {
-	width: 460px; /*just added to fix the image*/
+	width: 460px; 
 }
 /*--------------Services Page--------------------*/
 #image_rowSunrooms {
@@ -632,7 +626,7 @@ textarea {
 /* Mobile Portrait Size to Mobile Landscape Size */
 @media only screen and (max-width: 479px) {
 form {
-		/*background-color:yellow;*/
+		/*background-color:yellow;*//*breaking point colors commented out*/
 }
 body {
 	background-image: none;
@@ -739,7 +733,6 @@ aside .button {
 	margin-left: 32.8%;
 }
 .lower_aside {
-/*just added trying to fix the header image-will this widen the box?*/
 	margin-bottom: 20px;
 }
 /*----------------------------Schedule Form Settings------------*/
